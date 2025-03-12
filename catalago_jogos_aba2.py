@@ -149,6 +149,8 @@ titulo.pack(pady=10)
 treeview = ttk.Treeview(root, columns=("Nome", "Preço"), show="headings", height=10)
 treeview.column("Nome", width=400, anchor="w")
 treeview.column("Preço", width=150, anchor="e")
+treeview.heading("Nome", text="Nome")
+treeview.heading("Preço", text="Preço")
 treeview.pack(pady=10)
 
 # Adicionando os jogos ao Treeview
